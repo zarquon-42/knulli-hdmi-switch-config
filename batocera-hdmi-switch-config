@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $(batocera-settings-get global.bezel.hdmi_switch) -eq 1 ]; then
+    resolution=$(/usr/bin/batocera-resolution currentMode)
+    if [ "$resolution" = "640x480" ]; then
+        key=global.bezel.480p
+    else
+        key=global.bezel.720p
+    fi
+    bezel=$(batocera-settings-get $key)
+    batocera-settings-set global.bezel $bezel
+fi
