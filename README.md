@@ -1,5 +1,8 @@
 # knulli-hdmi-switch-config
 
+**This repository will now be archived as the POC worked but have now switched to a
+[different method utilizing configgen](https://github.com/knulli-cfw/distribution/pull/131).**
+
 This is a proof of concept (POC) to change the decoration settings in Knulli based on
 whether HDMI is connected on the Anbernic XX series of devices.
 
